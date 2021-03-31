@@ -1,0 +1,15 @@
+body{
+  background-color:white;
+}
+.paraprimopost{
+  font-size:15px;
+  font-family: sans-serif, serif;
+  font-style:italic;
+  color:black;
+}
+.parasecpost{
+  font-size:15px;
+  font-family: cursive, serif;
+  font-style:italic;
+  color:black;
+}

@@ -1,0 +1,16 @@
+.titolo{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width:25%;
+  color:red;
+}
+.bordoimg{
+  border:2px solid black;
+}
+.sottotitolo{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  color:blue;
+}
