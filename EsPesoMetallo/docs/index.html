@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <div class="container">
+    <form action="">
+      <label for="volume">Inserisci volume dell'oggetto</label>
+      <input type="text" name="volume" id="volume">
+      <br>
+      <label for="materiale">Scegli materiale</label>
+      <select name="materiali" id="materiale">
+        <option value="Acciaio">Acciaio</option>
+        <option value="Ottone">Ottone</option>
+        <option value="Alluminio">Alluminio</option>
+        <option value="Rame">Rame</option>
+      </select>
+      <br>
+      <button type="button" onclick="CalcolaPeso(form)" >Calcola peso</button>
+      <br>
+    </form>
+  </div>
+  <div class="risultato">
+    <p id="risultato"></p>
+  </div>
+  <script src="../js/app.js"></script>
+</body>
+</html>
