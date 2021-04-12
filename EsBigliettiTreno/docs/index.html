@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biglietti Treno</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <div class="container">
+    <form action="">
+      <div class="km">
+        <label for="km" class="label1">Inserisci i kilometri</label>
+        <input type="text" name="km" id="km">
+        <br>
+      </div>
+      <div class="radiobutton">
+        <br>
+        <label for="classi" class="label3">Seleziona la classe:</label>
+        <br>
+        <input type="radio" name="classi" id="classe1" value="1">Prima classe
+        <br>
+        <input type="radio" name="classi" id="classe2" value="2">Seconda classe
+        <br>
+      </div>
+      <div class="combobox">
+        <br>
+        <label for="persone" class="label3">Scegli il numero di persone:</label>
+          <select name="persone" id="persone">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+        </select>
+      </div>
+      <br>
+      <button type="button" onclick="CompraBiglietto(this.form)" name="btn" value="Conferma">Compra</button>
+    </form>
+  </div>
+
+  <p id="esito"></p>
+
+  <script src="../js/app.js"></script>
+</body>
+</html>
