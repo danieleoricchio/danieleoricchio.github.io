@@ -5,47 +5,130 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Link agli esercizi</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Orelega+One&display=swap" rel="stylesheet">
+  <style>
+    body{
+      background-color: #F8F8FF;
+      font-family: 'Roboto Mono', monospace;
+      background-image: url(../danieleoricchio.github.io/bg.jpg);
+    }
+    .content-table{
+      border-collapse: collapse;
+      margin: 25px 0;
+      font-size: 0.9em;
+      min-width: 400px;
+      border-radius: 5px 5px 5px 5px;
+      overflow: hidden;
+      box-shadow: 0 0 2px rgba(0, 0, 0, 0.15);
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .content-table thead tr {
+      background-color: #009879;
+      color: #fff;
+      text-align: left;
+      font-weight: bold;
+    }
+
+    .content-table th, 
+    .content-table td {
+      padding: 12px 15px;
+    }
+
+    .content-table tbody tr {
+      border-bottom: 1px solid #ddd;
+    }
+
+    .content-table tbody tr {
+      background-color: #f3f3f3;
+    }
+
+    .content-table tbody tr:last-of-type {
+      border-bottom: 2px solid #009879;
+    }
+
+    .content-table tbody tr {
+      font-weight: bold;
+      color: #008B8B;
+    }
+
+    .content-table tbody td a {
+      text-decoration: none;
+      color: #008B8B;
+    }
+
+    .content-table tbody td a:hover{
+      color: black;
+      cursor: pointer;
+    }
+
+    .main-header{
+      text-align: center;
+      margin-bottom: 20px;
+      color:#f3f3f3;
+      font-family: 'Dela Gothic One', cursive;
+    }
+  </style>
 </head>
 <body>
-  <table>
+  <h1 class="main-header">Esercizi di Daniele</h1>
+  <table class="content-table">
     <thead>
       <tr>
-        <th style="text-align: left;">Nome esercizio</th>
-        <th>Links</th>
+        <th>Esercizi Khan Academy</th>
+        <th>Link Github</th>
       </tr>
     </thead>
     <tbody>
-      <td>Esercizio Khan - <strong>Un perfetto viaggio con le immagini</strong></td>
-      <td><a href="esImmagini/docs/index.html">Cliccare</a></td>
-    </tbody>
-    <tbody>
-      <td>Esercizio Khan - <strong>Saltare Intorno</strong></td>
-      <td><a href="EsKhan/docs/index.html">Cliccare</a></td>
-    </tbody>
-    <tbody>
-      <td>Esercizio Khan - <strong>Libro Di Ricette</strong></td>
-      <td><a href="esProva/docs/index.html">Cliccare</a></td>
-    </tbody>
-    <tbody>
-      <td>Esercizio Khan - <strong>Pagina web sui viaggi</strong></td>
-      <td><a href="PaginaWebViaggi/docs/index.html">Cliccare</a></td>
-    </tbody>
-    <tbody>
-      <td>Esercizio Khan - <strong>Blog</strong></td>
-      <td><a href="Blog/docs/index.html">Cliccare</a></td>
-    </tbody>
-    <tbody>
-      <td>Esercizio 1 di laboratorio - <strong>Influencers</strong></td>
-      <td><a href="Esercizio1/docs/index.html">Cliccare</a></td>
-    </tbody>
-    <tbody>
-      <td>Esercizio 2 di laboratorio - <strong>Calcolo del peso</strong></td>
-      <td><a href="EsPesoMetallo/docs/index.html">Cliccare</a></td>
-    </tbody>
-    <tbody>
-      <td>Esercizio 3 di laboratorio - <strong>Comprare biglietti treno</strong></td>
-      <td><a href="EsBigliettiTreno/docs/index.html">Cliccare</a></td>
-    </tbody>
+      <tr>
+        <td>Esercizio Khan - Un perfetto viaggio con le immagini</td>
+        <td style="text-align: center;"><a href="esImmagini/docs/index.html">Visita</a></td>
+      </tr>
+      <tr>
+        <td>Esercizio Khan - Saltare Intorno</td>
+        <td style="text-align: center;"><a href="EsKhan/docs/index.html">Visita</a></td>
+      </tr>
+      <tr>
+        <td>Esercizio Khan - Libro Di Ricette</td>
+        <td style="text-align: center;"><a href="esProva/docs/index.html">Visita</a></td>
+      </tr>
+      <tr>
+        <td>Esercizio Khan - Pagina web sui viaggi</td>
+        <td style="text-align: center;"><a href="PaginaWebViaggi/docs/index.html">Visita</a></td>
+      </tr>
+      <tr>
+        <td>Esercizio Khan - Blog</td>
+        <td style="text-align: center;"><a href="Blog/docs/index.html">Visita</a></td>
+      </tr>
+    </tbody>    
+  </table>
+  <table class="content-table">
+    <thead>
+      <tr>
+        <th>Esercizi Laboratorio</th>
+        <th>Link Github</th>
+      </tr>
+    </thead>
+    <tr>
+      <td>Esercizio 1 di laboratorio - Influencers</td>
+      <td style="text-align: center;"><a href="Esercizio1/docs/index.html">Visita</a></td>
+    </tr>
+    <tr>
+      <td>Esercizio 2 di laboratorio - Calcolo del peso</td>
+      <td style="text-align: center;"><a href="EsPesoMetallo/docs/index.html">Visita</a></td>
+    </tr>
+    <tr>
+      <td>Esercizio 3 di laboratorio - Comprare biglietti treno</td>
+      <td style="text-align: center;"><a href="EsBigliettiTreno/docs/index.html">Visita</a></td>
+    </tr>
+    <tr>
+      <td>Esercizio 4 di laboratorio - Calcolo peso forma</td>
+      <td style="text-align: center;"><a href="CalcoloPesoForma/docs/index.html">Visita</a></td>
+    </tr>
   </table>
 </body>
 </html>
