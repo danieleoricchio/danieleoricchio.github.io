@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calcolo Peso Forma</title>
+</head>
+<body>
+  <h2>Inserimento Dati</h2>
+  <div class="dati">
+    <form action="">
+      <div class="altezza"> 
+          <label for="altezza" class="altezza">Inserisci l'Altezza: </label>
+          <input type="text" name="altezza" id="h">
+          <br>
+      </div>
+      <div class="sesso">
+        <br>
+        <label for="sesso" class="sesso">Scegli il sesso: </label>
+        <select name="sesso" id="sesso">
+          <option value="Maschio">M</option>
+          <option value="Femmina">F</option>
+        </select>
+      </div>
+      <div class="eta"> 
+        <br>
+        <label for="eta" class="eta">Inserisci la tua eta': </label>
+        <input type="text" name="eta" id="e">
+        <br>
+      </div>
+      <div class="peso">
+        <br>
+        <label for="peso" class="peso">Inserisci il tuo peso: </label>
+        <input type="text" name="peso" id="p">
+        <br>
+      </div>
+    </form>
+  </div>
+  <h2>Calcolo peso forma</h2>
+  <div class="buttons">
+    <div class="lorenz">
+      <h3>1:</h3>
+      <button type="button" onclick="CalcolaLorenz()" name="btn1" value="CalcolaLorenz">Calcola peso forma con Lorenz</button>
+      <p id="esitoLorenz"></p>
+    </div>
+    <div class="Broca">
+      <h3>2:</h3>
+      <button type="button" onclick="CalcolaBroca()" name="btn2" value="CalcolaBroca">Calcola peso forma con Broca</button>
+      <p id="esitoBroca"></p>
+    </div>
+    <div class="WanDerVael">
+      <h3>3:</h3>
+      <button type="button" onclick="CalcolaWanDerVael()" name="btn3" value="CalcolaWanDerVael">Calcola peso forma con Wan Der Vael</button>
+      <p id="esitoWanDerVael"></p>
+    </div>
+    <div class="BMI">
+      <h3>4:</h3>
+      <button type="button" onclick="CalcolaBMI()" name="btn4" value="CalcolaBMI">Calcola BMI</button>
+      <p id="esitoBMI"></p>
+    </div>
+  </div>
+
+  <script src="../js/app.js"></script>
+</body>
+</html>
