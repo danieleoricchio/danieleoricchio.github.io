@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Quiz con javascript</title>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
     <form action="">
         <h4>Dati anagrafici</h4>
         <label for="cognome">Cognome: </label>
         <input type="text" name="cognome" id="cognome">
+        <br>
         <label for="nome">Nome: </label>
         <input type="text" name="nome" id="nome">
         <br>
@@ -35,6 +37,7 @@
         <label for="anno">Anno:</label>
         <input type="text" name="anno" id="anno">
         <br>
+        <br>
         <fieldset>
             <legend>Domande</legend>
             <label for="domanda1">
@@ -44,8 +47,7 @@
             </label>
             <br>
             <input type="text" name="domanda1" id="d1">
-            <br>
-            <br>
+            <hr>
             <label for="domanda2">
                 Quanti valori può assumere una variabile booleana?
             </label>
@@ -56,8 +58,7 @@
                 <option value="4">4</option>
                 <option value="256">256</option>
             </select>
-            <br>
-            <br>
+            <hr>
             <label for="domanda3">Quali sono le librerie
                 caricate a run-time?
             </label>
@@ -65,38 +66,36 @@
             <input type="radio" name="domanda3" id="r1">Statiche
             <br>
             <input type="radio" name="domanda3" id="r2">Dinamiche
-            <br>
-            <br>
+            <hr>
             <label for="domanda4">
                 Quali tra queste sono parole chiave in C++?
             </label>
             <br>
-            <input type="checkbox" id="check1" name="void" value="void">void
+            <input type="checkbox" id="check1" name="check" value="void">void
             <br>
-            <input type="checkbox" id="check2" name="integer" value="integer">integer
+            <input type="checkbox" id="check2" name="check" value="integer">integer
             <br>
-            <input type="checkbox" id="check3" name="char" value="char">char
-            <br>
-            <br>
+            <input type="checkbox" id="check3" name="check" value="char">char
+            <hr>
             <label for="domanda5">8 bit corrispondo a un...</label>
             <br>
-            <input type="text" name="domanda5">
+            <input type="text" name="domanda5" id="domanda5">
         </fieldset>
         <br>
-        <button type="button" name="elabora" id="elabora" onclick="elabora(this.form)">Elabora</button>
+        <button type="button" onclick="elabora()">Elabora</button>
         <input type="reset" value="Cancella">
+        <br>
+        <br>
+        <fieldset>
+            <legend>Esito</legend>
+            <label for="punteggio">Punteggio: </label>
+            <input type="text" name="punteggio" id="punteggio">
+        </fieldset>
+        <br>
+        <br>
+        <button type="button" onclick="visualizzaCodice()">Utente con punteggio</button>
+        <input type="text" name="utentepunteggio" id="up">
     </form>
-    <br>
-    <br>
-    <fieldset style="display: inline-block">
-        <legend>Esito</legend>
-        <label for="punteggio">Punteggio: </label>
-        <input type="text" name="punteggio" id="punteggio">
-    </fieldset>
-    <br>
-    <br>
-    <button type="button">Utente con punteggio</button>
-    <input type="text" name="utentepunteggio" id="up">
     <script src="../js/script.js"></script>
 </body>
 </html>
