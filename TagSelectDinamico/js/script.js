@@ -22,4 +22,6 @@ function setup(){
   for (var provincie in array_provincie) {
     sel_provincie.add( new Option( array_provincie[provincie] ));
   }
+
+  
 }
