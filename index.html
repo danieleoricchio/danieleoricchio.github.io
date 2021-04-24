@@ -1,144 +1,314 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Link agli esercizi</title>
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Orelega+One&display=swap" rel="stylesheet">
-  <style>
-    body{
-      background-color: #00cec9;
-      font-family: 'Roboto Mono', monospace;
-    }
-    .content-table{
-      border-collapse: collapse;
-      margin: 25px 0;
-      font-size: 0.9em;
-      min-width: 400px;
-      border-radius: 5px 5px 5px 5px;
-      overflow: hidden;
-      box-shadow: 0 0 2px rgba(0, 0, 0, 0.15);
-      margin-left: auto;
-      margin-right: auto;
-    }
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Link agli esercizi</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Orelega+One&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background-color: #fcfcfc;
+        font-family: "Roboto Mono", monospace;
+      }
 
-    .content-table thead tr {
-      background-color: #009879;
-      color: #fff;
-      text-align: left;
-      font-weight: bold;
-    }
+      .content-table {
+        border-collapse: collapse;
+        margin: 25px 0;
+        font-size: 0.9em;
+        min-width: 400px;
+        border-radius: 5px 5px 5px 5px;
+        overflow: hidden;
+        box-shadow: 0 0 2px rgba(0, 0, 0, 0.15);
+        margin-left: auto;
+        margin-right: auto;
+      }
 
-    .content-table th, 
-    .content-table td {
-      padding: 12px 15px;
-    }
+      .content-table thead tr {
+        background-color: #009879;
+        color: #fff;
+        text-align: left;
+        font-weight: bold;
+      }
 
-    .content-table tbody tr {
-      border-bottom: 1px solid #ddd;
-    }
+      .content-table th,
+      .content-table td {
+        padding: 12px 15px;
+      }
 
-    .content-table tbody tr {
-      background-color: #f3f3f3;
-    }
+      .content-table tbody tr {
+        border-bottom: 1px solid #ddd;
+      }
 
-    .content-table tbody tr:last-of-type {
-      border-bottom: 2px solid #009879;
-    }
+      .content-table tbody tr {
+        background-color: #f3f3f3;
+      }
 
-    .content-table tbody tr {
-      font-weight: bold;
-      color: #008B8B;
-    }
+      .content-table tbody tr:last-of-type {
+        border-bottom: 2px solid #009879;
+      }
 
-    .content-table tbody td a {
-      text-decoration: none;
-      color: #008B8B;
-    }
+      .content-table tbody tr {
+        font-weight: bold;
+        color: #008b8b;
+      }
 
-    .content-table tbody td a:hover{
-      color:black;
-    }
+      .content-table tbody td a {
+        text-decoration: none;
+        color: #008b8b;
+      }
 
-    .main-header{
-      text-align: center;
-      margin-bottom: 20px;
-      color:#f3f3f3;
-      font-family: 'Dela Gothic One', cursive;
-    }
-  </style>
-</head>
-<body>
-  <h1 class="main-header">Esercizi di Daniele</h1>
-  <table class="content-table">
-    <thead>
+      .content-table tbody td a:hover {
+        color: black;
+      }
+
+      .main-header {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #000;
+        font-family: "Dela Gothic One", cursive;
+      }
+
+      #table-teoria {
+        float: left;
+        margin-left: 230px;
+      }
+
+      #table-lab {
+        float: right;
+        margin-right: 230px;
+      }
+
+      .vl {
+        border-left: 2px solid #008b8b;
+        height: 500px;
+        position: absolute;
+        left: 50%;
+        margin-left: -3px;
+        top: 35;
+      }
+
+      footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top: auto;
+        background: #008b8b;
+        height: 100vh;
+        height: auto;
+        font-family: "Open Sans";
+        color: #fff;
+      }
+
+      .contenuto-footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .contenuto-footer h3 {
+        font-size: 1.8rem;
+        font-weight: 400;
+        text-transform: capitalize;
+        line-height: 3rem;
+      }
+
+      .contenuto-footer p {
+        max-width: 500px;
+        margin: 10px auto;
+        line-height: 28px;
+        font-size: 14px;
+      }
+
+      .socials {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 1rem 0 3rem 0;
+      }
+
+      .socials li {
+        margin: 0 10px;
+      }
+
+      .socials a {
+        text-decoration: none;
+        color: #fff;
+      }
+
+      .footer-bottom {
+        background: #000;
+        width: 100vw;
+        padding: 10px 0;
+        text-align: center;
+      }
+
+      .footer-bottom p {
+        font-size: 14px;
+        word-spacing: 2px;
+        text-transform: capitalize;
+      }
+
+      .footer-bottom span {
+        text-transform: uppercase;
+        opacity: 0.4;
+        font-weight: 200;
+      }
+
+      @media only screen and (max-width: 1600px) {
+        .vl {
+          display: none;
+        }
+
+        #table-teoria {
+          float: right;
+          margin: auto;
+          margin-bottom: 50px;
+        }
+
+        #table-lab {
+          float: left;
+          margin: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="main-header">Esercizi di Daniele</h1>
+    <table class="content-table" id="table-teoria">
+      <thead>
+        <tr>
+          <th>Esercizi Teoria</th>
+          <th>Link Github</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Esercizio Khan - Un perfetto viaggio con le immagini</td>
+          <td style="text-align: center">
+            <a href="esImmagini/docs/index.html">Visita</a>
+          </td>
+        </tr>
+        <tr>
+          <td>Esercizio Khan - Saltare Intorno</td>
+          <td style="text-align: center">
+            <a href="EsKhan/docs/index.html">Visita</a>
+          </td>
+        </tr>
+        <tr>
+          <td>Esercizio Khan - Libro Di Ricette</td>
+          <td style="text-align: center">
+            <a href="esProva/docs/index.html">Visita</a>
+          </td>
+        </tr>
+        <tr>
+          <td>Esercizio Khan - Pagina web sui viaggi</td>
+          <td style="text-align: center">
+            <a href="PaginaWebViaggi/docs/index.html">Visita</a>
+          </td>
+        </tr>
+        <tr>
+          <td>Esercizio Khan - Blog</td>
+          <td style="text-align: center">
+            <a href="Blog/docs/index.html">Visita</a>
+          </td>
+        </tr>
+        <tr>
+          <td>Esercizio DOM e Js 1 - Tag Select Dinamico</td>
+          <td style="text-align: center">
+            <a href="TagSelectDinamico/docs/index.html">Visita</a>
+          </td>
+        </tr>
+        <tr>
+          <td>Esercizio Faq</td>
+          <td style="text-align: center">
+            <a href="TagSelectDinamicoFaq/docs/index.html">Visita</a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <hr class="vl" />
+    <table class="content-table" id="table-lab">
+      <thead>
+        <tr>
+          <th>Esercizi Laboratorio</th>
+          <th>Link Github</th>
+        </tr>
+      </thead>
       <tr>
-        <th>Esercizi Teoria</th>
-        <th>Link Github</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Esercizio Khan - Un perfetto viaggio con le immagini</td>
-        <td style="text-align: center;"><a href="esImmagini/docs/index.html">Visita</a></td>
+        <td>Esercizio 1 di laboratorio - Influencers</td>
+        <td style="text-align: center">
+          <a href="Esercizio1/docs/index.html">Visita</a>
+        </td>
       </tr>
       <tr>
-        <td>Esercizio Khan - Saltare Intorno</td>
-        <td style="text-align: center;"><a href="EsKhan/docs/index.html">Visita</a></td>
+        <td>Esercizio 2 di laboratorio - Calcolo del peso</td>
+        <td style="text-align: center">
+          <a href="EsPesoMetallo/docs/index.html">Visita</a>
+        </td>
       </tr>
       <tr>
-        <td>Esercizio Khan - Libro Di Ricette</td>
-        <td style="text-align: center;"><a href="esProva/docs/index.html">Visita</a></td>
+        <td>Esercizio 3 di laboratorio - Comprare biglietti treno</td>
+        <td style="text-align: center">
+          <a href="EsBigliettiTreno/docs/index.html">Visita</a>
+        </td>
       </tr>
       <tr>
-        <td>Esercizio Khan - Pagina web sui viaggi</td>
-        <td style="text-align: center;"><a href="PaginaWebViaggi/docs/index.html">Visita</a></td>
+        <td>Esercizio 4 di laboratorio - Calcolo peso forma</td>
+        <td style="text-align: center">
+          <a href="CalcoloPesoForma/docs/index.html">Visita</a>
+        </td>
       </tr>
       <tr>
-        <td>Esercizio Khan - Blog</td>
-        <td style="text-align: center;"><a href="Blog/docs/index.html">Visita</a></td>
+        <td>Esercizio 5 di laboratorio - Quiz</td>
+        <td style="text-align: center">
+          <a href="Quiz/docs/index.html">Visita</a>
+        </td>
       </tr>
-      <tr>
-        <td>Esercizio DOM e Js 1 - Tag Select Dinamico</td>
-        <td style="text-align: center;"><a href="TagSelectDinamico/docs/index.html">Visita</a></td>
-      </tr>
-      <tr>
-        <td>Esercizio Faq</td>
-        <td style="text-align: center;"><a href="TagSelectDinamicoFaq/docs/index.html">Visita</a></td>
-      </tr>
-    </tbody>    
-  </table>
-  <table class="content-table">
-    <thead>
-      <tr>
-        <th>Esercizi Laboratorio</th>
-        <th>Link Github</th>
-      </tr>
-    </thead>
-    <tr>
-      <td>Esercizio 1 di laboratorio - Influencers</td>
-      <td style="text-align: center;"><a href="Esercizio1/docs/index.html">Visita</a></td>
-    </tr>
-    <tr>
-      <td>Esercizio 2 di laboratorio - Calcolo del peso</td>
-      <td style="text-align: center;"><a href="EsPesoMetallo/docs/index.html">Visita</a></td>
-    </tr>
-    <tr>
-      <td>Esercizio 3 di laboratorio - Comprare biglietti treno</td>
-      <td style="text-align: center;"><a href="EsBigliettiTreno/docs/index.html">Visita</a></td>
-    </tr>
-    <tr>
-      <td>Esercizio 4 di laboratorio - Calcolo peso forma</td>
-      <td style="text-align: center;"><a href="CalcoloPesoForma/docs/index.html">Visita</a></td>
-    </tr>
-    <tr>
-      <td>Esercizio 5 di laboratorio - Quiz</td>
-      <td style="text-align: center;"><a href="Quiz/docs/index.html">Visita</a></td>
-    </tr>
-  </table>
-</body>
+    </table>
+
+    <footer>
+      <div class="contenuto-footer">
+        <h3>About me</h3>
+        <p>Link alla mia repository di github ed al mio profilo agorá.</p>
+        <ul class="socials">
+          <li>
+            <a
+              href="https://github.com/danieleoricchio/danieleoricchio.github.io"
+              ><img
+                src="indeximg/github.png"
+                alt="github"
+                height="31px"
+                width="31px"
+            /></a>
+          </li>
+          <li>
+            <a href="https://agora.ismonnet.it/agora/user/profile.php?id=8975"
+              ><img
+                src="https://moodle.org/theme/image.php/moodleorg/theme_moodleorg/1617268593/moodle_logo_small"
+                alt="Moodle"
+                height="31px"
+                width="102px"
+            /></a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-bottom">
+        <p>Copyright &copy;2021 designed by <span>Daniele Oricchio</span></p>
+      </div>
+    </footer>
+  </body>
 </html>
