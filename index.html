@@ -19,6 +19,15 @@
       body {
         background-color: #fcfcfc;
         font-family: "Roboto Mono", monospace;
+        margin: 0;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        background: radial-gradient(
+          ellipse at bottom,
+          #008b8b 0%,
+          #090a0f 100%
+        );
       }
 
       .content-table {
@@ -74,40 +83,16 @@
       .main-header {
         text-align: center;
         margin-bottom: 20px;
-        color: #000;
+        color: #fff;
         font-family: "Dela Gothic One", cursive;
       }
 
-      #table-teoria {
-        float: left;
-        margin-left: 230px;
-      }
-
-      #table-lab {
-        float: right;
-        margin-right: 230px;
-      }
-
-      .vl {
-        border-left: 2px solid #008b8b;
-        height: 500px;
-        position: absolute;
-        left: 50%;
-        margin-left: -3px;
-        top: 35;
-      }
-
       footer {
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        top: auto;
         background: #008b8b;
-        height: 100vh;
-        height: auto;
         font-family: "Open Sans";
         color: #fff;
+        display: flex;
+        flex-direction: column;
       }
 
       .contenuto-footer {
@@ -168,122 +153,118 @@
         font-weight: 200;
       }
 
-      @media only screen and (max-width: 1600px) {
-        .vl {
-          display: none;
-        }
-
-        #table-teoria {
-          float: right;
-          margin: auto;
-          margin-bottom: 50px;
-        }
-
-        #table-lab {
-          float: left;
-          margin: auto;
-        }
+      .container-table {
+        margin: 0 auto;
       }
+
+      .ol {
+        height: 1.5px;
+        background-color: #008b8b;
+      }
+
+     
     </style>
   </head>
   <body>
     <h1 class="main-header">Esercizi di Daniele</h1>
-    <table class="content-table" id="table-teoria">
-      <thead>
+    <div class="container-table">
+      <table class="content-table">
+        <thead>
+          <tr>
+            <th>Esercizi Teoria</th>
+            <th>Link Github</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Esercizio Khan - Un perfetto viaggio con le immagini</td>
+            <td style="text-align: center">
+              <a href="esImmagini/docs/index.html">Visita</a>
+            </td>
+          </tr>
+          <tr>
+            <td>Esercizio Khan - Saltare Intorno</td>
+            <td style="text-align: center">
+              <a href="EsKhan/docs/index.html">Visita</a>
+            </td>
+          </tr>
+          <tr>
+            <td>Esercizio Khan - Libro Di Ricette</td>
+            <td style="text-align: center">
+              <a href="esProva/docs/index.html">Visita</a>
+            </td>
+          </tr>
+          <tr>
+            <td>Esercizio Khan - Pagina web sui viaggi</td>
+            <td style="text-align: center">
+              <a href="PaginaWebViaggi/docs/index.html">Visita</a>
+            </td>
+          </tr>
+          <tr>
+            <td>Esercizio Khan - Blog</td>
+            <td style="text-align: center">
+              <a href="Blog/docs/index.html">Visita</a>
+            </td>
+          </tr>
+          <tr>
+            <td>Esercizio DOM e Js 1 - Tag Select Dinamico</td>
+            <td style="text-align: center">
+              <a href="TagSelectDinamico/docs/index.html">Visita</a>
+            </td>
+          </tr>
+          <tr>
+            <td>Esercizio Faq</td>
+            <td style="text-align: center">
+              <a href="TagSelectDinamicoFaq/docs/index.html">Visita</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <hr class="ol" />
+      <table class="content-table">
+        <thead>
+          <tr>
+            <th>Esercizi Laboratorio</th>
+            <th>Link Github</th>
+          </tr>
+        </thead>
         <tr>
-          <th>Esercizi Teoria</th>
-          <th>Link Github</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Esercizio Khan - Un perfetto viaggio con le immagini</td>
+          <td>Esercizio 1 di laboratorio - Influencers</td>
           <td style="text-align: center">
-            <a href="esImmagini/docs/index.html">Visita</a>
+            <a href="Esercizio1/docs/index.html">Visita</a>
           </td>
         </tr>
         <tr>
-          <td>Esercizio Khan - Saltare Intorno</td>
+          <td>Esercizio 2 di laboratorio - Calcolo del peso</td>
           <td style="text-align: center">
-            <a href="EsKhan/docs/index.html">Visita</a>
+            <a href="EsPesoMetallo/docs/index.html">Visita</a>
           </td>
         </tr>
         <tr>
-          <td>Esercizio Khan - Libro Di Ricette</td>
+          <td>Esercizio 3 di laboratorio - Comprare biglietti treno</td>
           <td style="text-align: center">
-            <a href="esProva/docs/index.html">Visita</a>
+            <a href="EsBigliettiTreno/docs/index.html">Visita</a>
           </td>
         </tr>
         <tr>
-          <td>Esercizio Khan - Pagina web sui viaggi</td>
+          <td>Esercizio 4 di laboratorio - Calcolo peso forma</td>
           <td style="text-align: center">
-            <a href="PaginaWebViaggi/docs/index.html">Visita</a>
+            <a href="CalcoloPesoForma/docs/index.html">Visita</a>
           </td>
         </tr>
         <tr>
-          <td>Esercizio Khan - Blog</td>
+          <td>Esercizio 5 di laboratorio - Quiz</td>
           <td style="text-align: center">
-            <a href="Blog/docs/index.html">Visita</a>
+            <a href="Quiz/docs/index.html">Visita</a>
           </td>
         </tr>
-        <tr>
-          <td>Esercizio DOM e Js 1 - Tag Select Dinamico</td>
-          <td style="text-align: center">
-            <a href="TagSelectDinamico/docs/index.html">Visita</a>
-          </td>
-        </tr>
-        <tr>
-          <td>Esercizio Faq</td>
-          <td style="text-align: center">
-            <a href="TagSelectDinamicoFaq/docs/index.html">Visita</a>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-    <hr class="vl" />
-    <table class="content-table" id="table-lab">
-      <thead>
-        <tr>
-          <th>Esercizi Laboratorio</th>
-          <th>Link Github</th>
-        </tr>
-      </thead>
-      <tr>
-        <td>Esercizio 1 di laboratorio - Influencers</td>
-        <td style="text-align: center">
-          <a href="Esercizio1/docs/index.html">Visita</a>
-        </td>
-      </tr>
-      <tr>
-        <td>Esercizio 2 di laboratorio - Calcolo del peso</td>
-        <td style="text-align: center">
-          <a href="EsPesoMetallo/docs/index.html">Visita</a>
-        </td>
-      </tr>
-      <tr>
-        <td>Esercizio 3 di laboratorio - Comprare biglietti treno</td>
-        <td style="text-align: center">
-          <a href="EsBigliettiTreno/docs/index.html">Visita</a>
-        </td>
-      </tr>
-      <tr>
-        <td>Esercizio 4 di laboratorio - Calcolo peso forma</td>
-        <td style="text-align: center">
-          <a href="CalcoloPesoForma/docs/index.html">Visita</a>
-        </td>
-      </tr>
-      <tr>
-        <td>Esercizio 5 di laboratorio - Quiz</td>
-        <td style="text-align: center">
-          <a href="Quiz/docs/index.html">Visita</a>
-        </td>
-      </tr>
-    </table>
+      </table>
+    </div>
 
     <footer>
       <div class="contenuto-footer">
         <h3>About me</h3>
-        <p>Link alla mia repository di github ed al mio profilo agorá.</p>
+        <p>Link alla mia repository di github ed al mio profilo su agorá.</p>
         <ul class="socials">
           <li>
             <a
@@ -310,5 +291,6 @@
         <p>Copyright &copy;2021 designed by <span>Daniele Oricchio</span></p>
       </div>
     </footer>
+
   </body>
 </html>
