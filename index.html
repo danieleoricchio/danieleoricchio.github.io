@@ -50,6 +50,8 @@
         box-shadow: 0 0 2px rgba(0, 0, 0, 0.15);
         margin-left: auto;
         margin-right: auto;
+        opacity: 0;
+        animation: slide 1s forwards;
       }
 
       .content-table thead tr {
@@ -95,6 +97,8 @@
         margin-bottom: 20px;
         color: #fff;
         font-family: "Dela Gothic One", cursive;
+        opacity: 0;
+        animation: slide 2s forwards;
       }
 
       footer {
@@ -111,6 +115,8 @@
         justify-content: center;
         flex-direction: column;
         text-align: center;
+        transform: translateX(-100rem);
+        animation: slide 1s forwards;
       }
 
       .contenuto-footer h3 {
@@ -155,6 +161,8 @@
         font-size: 14px;
         word-spacing: 2px;
         text-transform: capitalize;
+        transform: translateX(100rem);
+        animation: slide 1s forwards;
       }
 
       .footer-bottom span {
@@ -171,13 +179,34 @@
         height: 1.5px;
         border: none;
         background-color: #fff;
+        opacity: 0;
+        animation: slide 5s forwards;
+      }
+
+      #tabella-teoria{
+        transform: translateX(-100rem);
+        animation: slide 1s forwards;
+      }
+
+      #tabella-lab{
+        transform: translateX(100rem);
+        animation: slide 1s forwards;
+      }
+
+      @keyframes slide {
+        from {
+        }
+        to {
+          opacity: 1;
+          transform: translateX(0);
+        }
       }
     </style>
   </head>
   <body>
     <h1 class="main-header">Esercizi di Daniele</h1>
     <div class="container-table">
-      <table class="content-table">
+      <table class="content-table" id="tabella-teoria">
         <thead>
           <tr>
             <th>Esercizi Teoria</th>
@@ -230,7 +259,7 @@
         </tbody>
       </table>
       <hr class="ol" />
-      <table class="content-table">
+      <table class="content-table" id="tabella-lab">
         <thead>
           <tr>
             <th>Esercizi Laboratorio</th>
@@ -274,17 +303,13 @@
           </td>
         </tr>
         <tr>
-          <td>
-            Esercizio 7 di laboratorio - Generare un PDF
-          </td>
+          <td>Esercizio 7 di laboratorio - Generare un PDF</td>
           <td style="text-align: center">
             <a href="GeneraPDF/docs/index.html">Visita</a>
           </td>
         </tr>
         <tr>
-          <td>
-            Esercizio 8 di laboratorio - Disegnare piano cartesiano
-          </td>
+          <td>Esercizio 8 di laboratorio - Disegnare piano cartesiano</td>
           <td style="text-align: center">
             <a href="DisegnoPianoCartesiano/docs/index.html">Visita</a>
           </td>
